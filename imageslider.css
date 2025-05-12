@@ -1,0 +1,35 @@
+.slider-container {
+    width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 600px;
+    flex-shrink: 0;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.slider-container button.prev {
+    left: 10px;
+}
+
+.slider-container button.next {
+    right: 10px;
+}
